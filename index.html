@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sword Directory App</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+
+        <div class="form-item">
+          <label for="type" class="primary">Type</label>
+          <select id="type">
+            <option value="" disabled selected></option>
+            <option value="Tachi">Tachi</option>
+            <option value="Katana">Katana</option>
+            <option value="Wakazashi">Wakazashi</option>
+            <option value="Tanto">Tanto</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="period" class="primary">Period</label>
+          <select id="period">
+            <option value="" disabled selected></option>
+            <option value="Koto">Koto</option>
+            <option value="Shinto">Shinto</option>
+            <option value="ShinShinto">ShinShinto</option>
+            <option value="Gendaito">Gendaito</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="school" class="primary">School</label>
+          <select id="school">
+            <option value="" disabled selected></option>
+            <option value="Bizen">Bizen</option>
+            <option value="Mino">Mino</option>
+            <option value="Soshu">Soshu</option>
+            <option value="Yamashiro">Yamashiro</option>
+            <option value="Yamato">Yamato</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="smith" class="primary">Smith</label>
+          <input type="text" id="smith" required/>
+        </div>
+
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+      </form>
+
+    <h1>Sword Directory</h1>
+    <ul id="sword_directory"></ul>
+  </body>
+</html>

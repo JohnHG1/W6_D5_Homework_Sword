@@ -1,0 +1,16 @@
+body {
+  font-family: Palatino;
+}
+
+ul {
+    list-style-type: none;
+    display: flex-block;
+
+}
+
+li {
+  background-color: #ccc;
+  padding: 10px;
+  width: 80%;
+  margin: 10px;
+}
