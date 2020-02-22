@@ -1,32 +1,95 @@
 body {
-  font-family: Palatino;
+  background: grey url('/images/Grey.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: 60%;
+  color: black;
+  font-family: 'Ariel', sans-serif;
+  padding: 5px;
+  margin: 5px;
 }
 
-ul {
-    list-style-type: none;
-    display: flex-block;
-
+h1 {
+  font-size: 2.25em;
+  font-family: 'Ariel', sans-serif;
+  color: black;
+  margin-bottom: 5px;
+  padding: 5px;
 }
+
+label {
+  font-family: 'Ariel', sans-serif;
+  color: black;
+  margin: 1px;
+  padding: 1px;
+  font-size: 0.8em;
+}
+
+a {
+  font-size: 0.5em;
+}
+
+nav {
+  padding: 10px;
+  margin: 10px;
+  padding-right: 15px;
+}
+
 
 li {
-  background-color: #ccc;
-  padding: 10px;
-  width: 80%;
-  margin: 10px;
+  font-family: 'Ariel', sans-serif;
+  color: black;
+  font-size: 1.25em;
+  margin-bottom: 5px;
 }
 
-body {
-    padding:0;
-    margin:0;
+.form-item {
+  margin-right: 1.1rem;
+}
+
+label.primary {
+  display: block;
+  margin: 0.1em 0;
+}
+
+
+label::after {
+  content: ":";
+}
+
+button, input[type="save"] {
+  margin-top: 1rem;
+}
+
+#sword-directory {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.sword_directory-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #20437c;
+  border-radius: 5%;
+  background: #ddeaff;
+}
+
+
+body
+font-family:
+    padding:5;
+    margin:5;
     overflow:hidden;
-	height: 600px;
+	   height: 600px;
 }
 canvas {
-    padding:0;
-    margin:0;
+    padding:5;
+    margin:5;
 }
 div.btnbg {
-    position:fixed;
+    position:flex;
     left:0;
     top:0;
 }
