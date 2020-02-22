@@ -1,9 +1,9 @@
 body {
-  background: grey url('/images/Grey.jpeg');
+  background: grey;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
-  background-size: 60%;
+  background-size: 30%;
   color: black;
   font-family: 'Ariel', sans-serif;
   padding: 5px;
@@ -32,49 +32,81 @@ a {
 
 nav {
   padding: 10px;
-  margin: 10px;
-  padding-right: 15px;
+  margin: 50px;
+  padding-right: 5px;
 }
-
 
 li {
   font-family: 'Ariel', sans-serif;
-  color: black;
-  font-size: 1.25em;
+  color: #43464B;
+  font-size: 1.2em;
   margin-bottom: 5px;
+  background-color: #ffb7c5;
+  padding: 10px;
+  width: 20%;
+  margin: 5px;
+  display: inline-grid;
+  flex-wrap: wrap;
+  border-radius: 35px;
 }
 
-.form-item {
-  margin-right: 1.1rem;
+input {
+  font-family: 'Ariel', sans-serif;
+  color: #43464B;
+  font-size: 1em;
+  margin-bottom: 5px;
+  background-color: #ffb7c5;
+  padding: 10px;
+  width: 5%;
+  margin: 5px;
+  display: inline-grid;
+  flex-wrap: wrap;
 }
+
+ul {
+  flex-wrap: wrap;
+}
+
+/* .form-item {
+  margin-right: 6.5rem;
+} */
 
 label.primary {
-  display: block;
+  display: inline-block;
   margin: 0.1em 0;
 }
 
-
 label::after {
-  content: ":";
+  content: attr();
 }
 
 button, input[type="save"] {
   margin-top: 1rem;
 }
 
-#sword-directory {
+.btn {
+  border:0px none;
+  border-radius: %;
+  padding: 12px 19px;
+  color: white;
+  cursor:pointer;
+  font-size: 1.75em;
+  font-family: 'Ariel', sans-serif;
+
+sword-directory {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-.sword_directory-item {
+
+/* .sword_directory-item {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
-  border: 1px solid #20437c;
+  border: 5px solid #20437c;
   border-radius: 5%;
   background: #ddeaff;
-}
+} */
 
 
 body
@@ -92,4 +124,11 @@ div.btnbg {
     position:flex;
     left:0;
     top:0;
+}
+
+.btn--action:hover {
+  background-color: green;
+}
+.btn--wrapper {
+  margin: 15px 15px 30px 15px;
 }

@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
   <body>
-
     <form id="new-item-form">
       <div id="form-wrapper">
         <div class="form-item">
@@ -20,6 +19,7 @@
               <option value="Tanto">Tanto</option>
               <option value="Other">Other</option>
             </select>
+
         </div>
         <div class="form-item">
           <label for="period" class="primary">Period</label>
@@ -48,14 +48,14 @@
             <input type="text" id="smith" required/>
         </div>
         <div>
-          <input type="submit" value="save"/>
+          <!-- <input type="submit" value="save"/> -->
+          <button id="submit">Submit</button>
         </div>
       </form>
-
       <button id="delete-all">Delete All</button>
-
     <h1>Sword Directory</h1>
     <hr>
+    
     <p>Sword shown below are in-stock itmes</p>
 
     <ul id="sword_directory"></ul>
@@ -66,7 +66,7 @@
   </div>
 
 
-  <!-- sakura shader -->
+  sakura shader
   <script id="sakura_point_vsh" type="x-shader/x_vertex">
   uniform mat4 uProjection;
   uniform mat4 uModelview;
