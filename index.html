@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Sword Directory App</title>
-    <script src="js/app.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
   </head>
   <body>
     <form id="new-item-form">
       <div id="form-wrapper">
-        <div class="form-item">
-          <label for="type" class="primary">Type</label>
+        <div class="form-item-inline">
+          <h1>Sword Directory</h1>
+          <hr>
+          <p>Input new items using tabs below</p>
+          <ul id="sword_directory"></ul>
+          <ol class="horizontal-list">
+            <div>
+          <li><label for="type-text" class="primary">Type</label>
             <select id="type">
               <option value="" disabled selected></option>
               <option value="Tachi">Tachi</option>
@@ -18,11 +24,10 @@
               <option value="Wakazashi">Wakazashi</option>
               <option value="Tanto">Tanto</option>
               <option value="Other">Other</option>
-            </select>
-
+            <li></select>
         </div>
         <div class="form-item">
-          <label for="period" class="primary">Period</label>
+          <li><label for="period" class="primary">Period</label>
             <select id="period">
               <option value="" disabled selected></option>
               <option value="Koto">Koto</option>
@@ -30,10 +35,10 @@
               <option value="ShinShinto">ShinShinto</option>
               <option value="Gendaito">Gendaito</option>
               <option value="Unknown">Unknown</option>
-            </select>
+            <li></select>
         </div>
         <div class="form-item">
-          <label for="school" class="primary">School</label>
+          <li><label for="school" class="primary">School</label>
             <select id="school">
               <option value="" disabled selected></option>
               <option value="Bizen">Bizen</option>
@@ -41,31 +46,27 @@
               <option value="Soshu">Soshu</option>
               <option value="Yamashiro">Yamashiro</option>
               <option value="Yamato">Yamato</option>
-            </select>
+            <li></select>
         </div>
         <div class="form-item">
           <label for="smith" class="primary">Smith</label>
             <input type="text" id="smith" required/>
         </div>
+      </ol>
         <div>
           <!-- <input type="submit" value="save"/> -->
-          <button id="submit">Submit</button>
+      <button id="submit">Submit</button>
         </div>
       </form>
       <button id="delete-all">Delete All</button>
-    <h1>Sword Directory</h1>
-    <hr>
-    
-    <p>Sword shown below are in-stock itmes</p>
 
-    <ul id="sword_directory"></ul>
   </body>
+  <hr>
 
   <canvas id="sakura"></canvas>
   <div class="btnbg">
   </div>
-
-
+  <hr>
   sakura shader
   <script id="sakura_point_vsh" type="x-shader/x_vertex">
   uniform mat4 uProjection;
