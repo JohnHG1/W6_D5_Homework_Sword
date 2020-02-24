@@ -836,6 +836,7 @@ window.addEventListener('load', function(e) {
     timeInfo.start = new Date();
     timeInfo.prev = timeInfo.start;
     animate();
+    document.body.style.background = 'url(' + canvas.toDataURL() + ')';
 });
 
 //set window.requestAnimationFrame
